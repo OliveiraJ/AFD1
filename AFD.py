@@ -8,16 +8,16 @@ for estd in estds:
     transicoes_afd[estd] = {}
 
 for i in range(0,qtd_transicoes):
-    inicial, character, final = input().split(" ")
+    inicial, caractere, final = input().split(" ")
     
-    if character not in transicoes_afd[inicial]:
-        transicoes_afd[inicial][character] = final
+    if caractere not in transicoes_afd[inicial]:
+        transicoes_afd[inicial][caractere] = final
         
 estd_inicial = input()
 estds_finais = input().split(" ")
-sigma = input().split(" ")
+delta = input().split(" ")
 
-for palavra in sigma:
+for palavra in delta:
     estd_atual = estd_inicial
     estd_erro = 0
     
